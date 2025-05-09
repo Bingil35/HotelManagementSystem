@@ -13,17 +13,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>13</version>
+            <version>21.0.7</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>13</version>
-        </dependency>
-        <dependency>
-            <groupId>de.jensd</groupId>
-            <artifactId>fontawesomefx</artifactId>
-            <version>8.9</version> <!-- Use this version -->
+            <version>21.0.7</version>
         </dependency>
     </dependencies>
     <build>
@@ -33,15 +28,15 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <release>11</release>
+                    <release>17</release>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.4</version>
+                <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.mycompany.hotelmanagement.App</mainClass>
+                    <mainClass>com.mycompany.hotelmanagement/com.mycompany.hotelmanagement.App</mainClass>
                 </configuration>
                 <executions>
                     <execution>
