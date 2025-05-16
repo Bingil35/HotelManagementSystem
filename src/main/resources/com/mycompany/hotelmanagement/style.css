@@ -8,3 +8,7 @@
     -fx-text-fill:  #06264C;
     -fx-background-color: #e6f0ff;
 }
+
+Button {
+    -fx-cursor: hand;
+}

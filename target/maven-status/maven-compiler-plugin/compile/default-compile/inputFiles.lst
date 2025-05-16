@@ -1,6 +1,8 @@
 /home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/App.java
 /home/my-wife/NetBeansProjects/HotelManagement/src/main/java/module-info.java
-/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/SidebarController.java
-/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/MainController.java
-/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/LoginController.java
+/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/controllers/HomeController.java
+/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/controllers/BookingController.java
+/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/controllers/MainController.java
+/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/controllers/SidebarController.java
+/home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/controllers/LoginController.java
 /home/my-wife/NetBeansProjects/HotelManagement/src/main/java/com/mycompany/hotelmanagement/utils/HoverImageHelper.java

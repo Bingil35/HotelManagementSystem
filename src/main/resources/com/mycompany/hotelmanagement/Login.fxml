@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1480.0" style="-fx-background-color: #06264C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.hotelmanagement.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1480.0" style="-fx-background-color: #06264C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.hotelmanagement.controllers.LoginController">
    <children>
       <Pane layoutX="89.0" layoutY="120.0" prefHeight="650.0" prefWidth="624.0">
          <children>
@@ -47,7 +47,7 @@
                <font>
                   <Font size="18.0" />
                </font></PasswordField>
-            <Button fx:id="LoginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="463.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #06264C; -fx-background-radius: 30px; -fx-cursor: hand;" text="Đăng nhập" textFill="#e6f0ff">
+            <Button fx:id="LoginButton" alignment="CENTER" contentDisplay="CENTER" layoutX="152.0" layoutY="463.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToMain" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #06264C; -fx-background-radius: 30px; -fx-cursor: hand;" text="Đăng nhập" textFill="#e6f0ff">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

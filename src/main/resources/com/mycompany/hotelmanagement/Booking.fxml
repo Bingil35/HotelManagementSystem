@@ -11,6 +11,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -19,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1580.0" style="-fx-background-color: #06264C;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.hotelmanagement.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1580.0" style="-fx-background-color: #06264C;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.hotelmanagement.controllers.MainController">
    <center>
       <ScrollPane hbarPolicy="NEVER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1570.0" translateX="80.0" vmax="1500.0" BorderPane.alignment="CENTER">
         <content>
@@ -113,7 +114,7 @@
                             <TableColumn prefWidth="242.5" text="Loại phòng" />
                             <TableColumn prefWidth="242.5" text="Số lượng phòng" />
                               <TableColumn prefWidth="242.5" text="Sức chứa/ phòng" />
-                              <TableColumn prefWidth="242.5" text="Column X" />
+                              <TableColumn prefWidth="242.5" text="Thao tac" />
                           </columns>
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -137,7 +138,7 @@
                            <font>
                               <Font size="18.0" />
                            </font></CheckBox>
-                        <CheckBox fx:id="checkRoomtype" layoutX="800.0" layoutY="985.0" mnemonicParsing="false" onAction="#openCheckRoomType" text="Loại giường">
+                        <CheckBox fx:id="checkRoomtype" layoutX="800.0" layoutY="985.0" mnemonicParsing="false" onAction="#toggleBedType" text="Loại giường">
                            <font>
                               <Font size="18.0" />
                            </font></CheckBox>
@@ -153,18 +154,22 @@
                            <font>
                               <Font size="18.0" />
                            </font></CheckBox>
-                        <RadioButton fx:id="roomType" layoutX="850.0" layoutY="1020.0" mnemonicParsing="false" selected="true" text="Giường đơn" visible="false">
+                        <RadioButton fx:id="singleBedType" layoutX="850.0" layoutY="1020.0" mnemonicParsing="false" selected="true" text="Giường đơn" visible="false">
                            <font>
                               <Font size="16.0" />
                            </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="roomTypeGroup" />
+                           </toggleGroup>
                         </RadioButton>
-                        <RadioButton fx:id="roomType" layoutX="1000.0" layoutY="1020.0" mnemonicParsing="false" text="Giường đôi" visible="false">
+                        <RadioButton fx:id="doubleBedType" layoutX="1000.0" layoutY="1020.0" mnemonicParsing="false" text="Giường đôi" toggleGroup="$roomTypeGroup" visible="false">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </RadioButton>
                         <TextField fx:id="checkinHour" layoutX="185.0" layoutY="1080.0" prefHeight="28.0" visible="false" />
                         <TextField fx:id="checkoutHour" layoutX="835.0" layoutY="1080.0" prefHeight="28.0" visible="false" />
+                        <Button fx:id="roomInfoButton" layoutX="972.0" layoutY="576.0" mnemonicParsing="false" text="Chi tiet phong" />
                      </children>
                   </Pane>
                </children>

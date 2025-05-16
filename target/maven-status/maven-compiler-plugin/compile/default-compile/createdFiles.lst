@@ -1,6 +1,8 @@
-com/mycompany/hotelmanagement/LoginController.class
-com/mycompany/hotelmanagement/MainController.class
+com/mycompany/hotelmanagement/controllers/LoginController.class
+com/mycompany/hotelmanagement/controllers/MainController.class
+com/mycompany/hotelmanagement/controllers/SidebarController.class
 com/mycompany/hotelmanagement/utils/HoverImageHelper.class
 module-info.class
-com/mycompany/hotelmanagement/SidebarController.class
 com/mycompany/hotelmanagement/App.class
+com/mycompany/hotelmanagement/controllers/HomeController.class
+com/mycompany/hotelmanagement/controllers/BookingController.class
